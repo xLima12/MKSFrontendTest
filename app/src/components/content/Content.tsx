@@ -1,9 +1,9 @@
 "use client";
 
 import { useQuery } from "react-query";
-import CardProduct from "../../components/cardProduct/CardProduct";
+import CardProduct from "../cardProduct/CardProduct";
 import styled from "styled-components";
-import Skeleton from "../../components/skeleton/Skeleton";
+import Skeleton from "../skeleton/Skeleton";
 import { useCart } from "../../context/CartContext";
 
 interface Product {

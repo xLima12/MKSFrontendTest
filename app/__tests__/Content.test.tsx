@@ -2,7 +2,7 @@
 import React from 'react';
 import { render, waitFor } from '@testing-library/react';
 import { useQuery } from 'react-query';
-import Content from '../src/pages/Content/index';
+import Content from '../src/components/content/Content';
 
 jest.mock('react-query');
 

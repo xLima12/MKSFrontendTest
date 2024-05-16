@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import StyledComponentsRegistry from "./lib/registry";
-import GlobalStyle from "./GlobalStyle";
-import Home from "./src/pages/index";
 
 export const metadata: Metadata = {
   title: "MKS Sistema",
@@ -18,12 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
-          <GlobalStyle />
-          <StyledComponentsRegistry>
-            {children}
-          </StyledComponentsRegistry>
-      </body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }

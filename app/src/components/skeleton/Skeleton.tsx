@@ -29,7 +29,12 @@ const SkeletonCards = () => {
   return (
     <SkeletonContainer>
       {[...Array(8)].map((_, index) => (
-        <SkeletonCard key={index} />
+        <SkeletonCard
+          key={index}
+          initial={{ opacity: 0.5 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        />
       ))}
     </SkeletonContainer>
   );
