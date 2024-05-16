@@ -11,7 +11,9 @@ export const metadata: Metadata = {
 
 const font = Montserrat({ subsets: ["latin"] });
 
-export default function RootLayout({}: Readonly<{
+export default function RootLayout({
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -19,7 +21,7 @@ export default function RootLayout({}: Readonly<{
       <body className={font.className}>
           <GlobalStyle />
           <StyledComponentsRegistry>
-            <Home />
+            {children}
           </StyledComponentsRegistry>
       </body>
     </html>
